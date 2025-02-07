@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="Body.cpp" />
     <ClCompile Include="Elements_Initializer.cpp" />
+    <ClCompile Include="Input_core.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SceneManagement.cpp" />
     <ClCompile Include="Sprite.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="Body.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Elements_Initializer.h" />
+    <ClInclude Include="Input_core.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="SceneManagement.h" />
     <ClInclude Include="Sprite.h" />

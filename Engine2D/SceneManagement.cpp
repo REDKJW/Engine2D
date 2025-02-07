@@ -85,17 +85,19 @@ bool Scene::add_sprite(const std::wstring& filename, int type, int x, int y, int
 }
 
 void Scene::click(int mouse_x, int mouse_y)
-{
-	for (size_t i = all_sprite.size() - 1; i > -1; i--)
+{	
+	
+	for (int i = all_sprite.size() - 1; i >= 0; i--) //여기 못 들어가고있음... size_t 오버플로우 문제였음. size_t사용시에 주의
 	{
 		//클릭은 역순으로
 		if (all_sprite[i].first->getType() == 1)//버튼에 대해서만
 		{
 			if (all_sprite[i].first->is_clicked(mouse_x, mouse_y))//클릭된 버튼 객체를 찾았음
 			{
+				//오브젝트 클릭 확인
 				auto child_ptr = std::dynamic_pointer_cast<easyButton>(all_sprite[i].first);
 				child_ptr->clicked();
-				return;
+				return; //클릭시 즉시 탈출해야함.
 			}
 		}
 	}
@@ -110,6 +112,20 @@ void Scene::addFunc(int target_button, std::function<void()> func)//타겟 버�
 	{
 		child_ptr->addAction(func);
 	}
+}
+
+void Scene::getInput(MOUSE& mouse, std::vector<bool> *key_state)
+{
+	if (mouse.Lclicked) //좌클릭시
+	{
+		//정상적으로 클릭을 확인하였음.
+
+		click(mouse.pos.x, mouse.pos.y); //클릭함수 실행
+	}
+
+	//키보드 입력시에는?
+
+	return;
 }
 
 
@@ -147,6 +163,8 @@ Scene* SceneManager::getScene(int index) //인덱스에 해당하는 씬의 주�
 
 void SceneManager::sceneSwitcher(int target_index) //씬을 전환하는 함수
 {
+	if (target_index >= scenes.size())return; //유효성 확인
+	
 	sceneNow = target_index;
 	//메모리 로딩 등이 필요한 경우, 해당 함수를 수정
 
@@ -190,7 +208,13 @@ void SceneManager::Draw() //출력함수. SCENEMANAGER->SCENE[INDEX].DRAW로 호
 	return;
 }
 
-
+void SceneManager::getInput(MOUSE& mouse, std::vector<bool>  *key_state)
+{
+	//씬넘버의 유효성 확인
+	if (sceneNow >= scenes.size())return;
+	scenes[sceneNow]->getInput(mouse, key_state);
+	return;
+}
 
 
 

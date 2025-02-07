@@ -6,7 +6,7 @@
 
 #include <windows.h> //hdc등을 선언하기 위한 헤더
 
-
+#include "Input_core.h" //외부 입력을 위한 헤더
 #include <memory> //
 #include <typeindex> //type 비교를 위한 헤더. 사용하나? 확인필요
 
@@ -45,7 +45,7 @@ public:
 
 	void addFunc(int target_button, std::function<void()> func); //타겟 버튼과 적용할 함수. 함수를 버튼에 할당하는 함수.
 
-
+	void getInput(MOUSE& mouse, std::vector<bool> *key_state); //인풋에 대하여, 이 씬에서 반응할 행동
 };
 
 //씬 매니저 선언
@@ -58,7 +58,7 @@ private:
 
 	ULONG_PTR gdiplusToken;
 
-	int sceneNow = -1;//현재 씬
+	int sceneNow = 0;//현재 씬
 
 	int width = 0;
 	int height = 0;
@@ -80,6 +80,9 @@ public:
 	~SceneManager(); //소멸자
 
 	void Draw(); //출력함수
+
+	//외부 입력을 받아, 임의의 씬으로 전달
+	void getInput(MOUSE &mouse, std::vector<bool> *key_state);
 
 };
 
