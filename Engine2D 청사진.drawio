@@ -1,0 +1,352 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
+  <diagram name="페이지-1" id="qv0SaXTaKMS36WOPWnBy">
+    <mxGraphModel dx="3218" dy="2223" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-1" value="엔진 초기화" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="-80" width="1260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-2" value="main.cpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-520" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-3" value="body.cpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-4" value="elements initializer.cpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-5" value="scene management.cpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-6" value="sprite.cpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-7" value="input core.cpp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-9" target="t-AsFtT7vG49kxP8RTwV-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-425" y="190" />
+              <mxPoint x="-200" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-9" value="시작&lt;div&gt;win main&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-485" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-10" target="t-AsFtT7vG49kxP8RTwV-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-200" y="290" />
+              <mxPoint x="665" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-10" value="body 구조체 선언" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-12" value="body.initialize&lt;div&gt;로 초기화&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-14" target="t-AsFtT7vG49kxP8RTwV-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-200" y="720" />
+              <mxPoint x="20" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-14" value="1. 윈도우 프록시저&lt;div&gt;초기화&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;2. 윈도우 핸들 선언&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. show window&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. 더블버퍼링을 위한&lt;/div&gt;&lt;div&gt;핸들 초기화&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="490" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-16" value="scene manager&lt;div&gt;구조체 선언&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-18" target="t-AsFtT7vG49kxP8RTwV-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="1040" />
+              <mxPoint x="-200" y="1040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-18" value="씬 매니저 생성자&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. 더블 버퍼링 핸들 주소값 인계&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. GDI+ 시작&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="821" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-19" target="t-AsFtT7vG49kxP8RTwV-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-200" y="1210" />
+              <mxPoint x="245" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-19" value="elements initializer.cpp&lt;div&gt;에서&lt;/div&gt;&lt;div&gt;UI_initializer() 호출&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="1080" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-22" value="UI initializer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1239" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-24" target="t-AsFtT7vG49kxP8RTwV-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="1460" />
+              <mxPoint x="-200" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-24" value="개별 씬을 함수 형태로 사용자가 작성하여&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;각각 초기화&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1330" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-25" target="t-AsFtT7vG49kxP8RTwV-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-200" y="1760" />
+              <mxPoint x="665" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-25" value="scenemanager&lt;div&gt;-&amp;gt;sceneSwitcher&lt;/div&gt;&lt;div&gt;(ENTRY_SCENE)&lt;div&gt;으로&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CONFIG에 정해둔&lt;/div&gt;&lt;div&gt;엔트리 포인트를&lt;/div&gt;&lt;div&gt;시작점으로 지정&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="1520" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-27" target="t-AsFtT7vG49kxP8RTwV-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="380" />
+              <mxPoint x="-200" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-27" value="선언시에&lt;div&gt;키보드 입력받는&lt;/div&gt;&lt;div&gt;INPUT 구조체 선언됨&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="605" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-30" target="t-AsFtT7vG49kxP8RTwV-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="1870" />
+              <mxPoint x="-200" y="1870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-30" value="INPUT에&amp;nbsp;&lt;div&gt;HWND핸들 전달&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="605" y="1790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-32" target="t-AsFtT7vG49kxP8RTwV-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-200" y="1970" />
+              <mxPoint x="-440" y="1970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-32" value="생성자 끝" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="1890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-34" target="t-AsFtT7vG49kxP8RTwV-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-440" y="2060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-34" value="생성자&lt;div&gt;반환값 이상시 종료&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="1980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-36" value="이상 없다면&lt;div&gt;BODY&lt;/div&gt;&lt;div&gt;-&amp;gt;MESSAGE&lt;/div&gt;&lt;div&gt;LOOP()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="2090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-39" value="BODY.MESSAGE LOOP()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="-80" width="930" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-40" value="FPS를 위한&lt;div&gt;SLEEP 필요&lt;/div&gt;&lt;div&gt;(미구현)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-41" value="INPUT.CHECK_INPUT()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="170" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-42" value="마우스 커서 반환&lt;div&gt;후, HWND에 해당하는 윈도우에 보정&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="230" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-43" target="t-AsFtT7vG49kxP8RTwV-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-43" value="루프 시작" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=-0.068;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-40" target="t-AsFtT7vG49kxP8RTwV-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="160" />
+              <mxPoint x="1479" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-47" target="t-AsFtT7vG49kxP8RTwV-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1485" y="420" />
+              <mxPoint x="1220" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-47" value="미리 선언해둔&lt;div&gt;장치에 대한&lt;/div&gt;&lt;div&gt;입력 확인&lt;/div&gt;&lt;div&gt;(CONFIG에 따라 바뀌도록 변경 예정)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="300" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-49" target="t-AsFtT7vG49kxP8RTwV-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="520" />
+              <mxPoint x="1685" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-49" value="BODY로 돌아옴" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-51" value="SCENE MANAGER에게&lt;div&gt;입력 전달&lt;/div&gt;&lt;div&gt;(SCENE MANAGER에서&lt;/div&gt;&lt;div&gt;필요한 입력만 별도로 참조하도록 바뀔 수 있음)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="570" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-54" target="t-AsFtT7vG49kxP8RTwV-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1685" y="790" />
+              <mxPoint x="1930" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-54" value="현재 씬의 유효성 확인 후&lt;div&gt;해당 씬에게 다시 전달&lt;/div&gt;&lt;div&gt;SCENE[I].GETINPUT&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="710" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-55" value="CONFIG와 UI_INIT에 따른 람다 배정으로&lt;div&gt;바꿀 예정&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="800" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-57" value="(일단) 좌클릭시&lt;div&gt;THIS.CLICK(POS)&lt;/div&gt;&lt;div&gt;호출&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1865" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-58" target="t-AsFtT7vG49kxP8RTwV-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1927" y="1150" />
+              <mxPoint x="2200" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-58" value="모든 스프라이트에 대하여&lt;div&gt;가장 화면쪽에서 역순으로&lt;/div&gt;&lt;div&gt;버튼인 오브젝트에 대하여&lt;/div&gt;&lt;div&gt;POS와 충돌 비교&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;유효시&lt;/div&gt;&lt;div&gt;BUTTON-&amp;gt;CLICKED()호출&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="961" width="175" height="149" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-59" target="t-AsFtT7vG49kxP8RTwV-61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2200" y="1260" />
+              <mxPoint x="1927" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-59" value="해당 버튼에 배정받은&lt;div&gt;람다 함수 전부 호출&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2140" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-61" target="t-AsFtT7vG49kxP8RTwV-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1928" y="1380" />
+              <mxPoint x="1685" y="1380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-61" value="1회 버튼 클릭시&lt;div&gt;즉시 종료&lt;/div&gt;&lt;div&gt;(안 그러면 뒷 버튼도 눌림)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1867.5" y="1270" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-63" target="t-AsFtT7vG49kxP8RTwV-65">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1685" y="1520" />
+              <mxPoint x="1220" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-63" value="SCENE&lt;div&gt;MANAGER&lt;/div&gt;&lt;div&gt;-&amp;gt;GET INPUT()&lt;/div&gt;&lt;div&gt;종료&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1625" y="1420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-65" value="윈도우 메시지&lt;div&gt;발견시 처리할&lt;/div&gt;&lt;div&gt;PEEK MESSAGE&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-67" target="t-AsFtT7vG49kxP8RTwV-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="1750" />
+              <mxPoint x="1685" y="1750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-67" value="BODY-&amp;gt;DRAW()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1660" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-68" value="SCENE&lt;div&gt;MANAGER&lt;/div&gt;&lt;div&gt;-&amp;gt;DRAW()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1625" y="1770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-69" value="결과물이 그려진&lt;div&gt;BACK DC를&lt;/div&gt;&lt;div&gt;출력층 DC에 덮어씌움&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="2360" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-71" target="t-AsFtT7vG49kxP8RTwV-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1685" y="1920" />
+              <mxPoint x="1925" y="1920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-71" value="유효성을 확인하고&lt;div&gt;해당 씬의&lt;/div&gt;&lt;div&gt;PRINT SPRITE()를&lt;/div&gt;&lt;div&gt;호출&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1625" y="1850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-72" value="COUNT의&lt;div&gt;기본인자는 -1&lt;div&gt;-1 입력시 전체 출력&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1865" y="1930" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-73" value="GRAPHICS&lt;div&gt;흰색으로 초기화&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1865" y="2020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-74" value="스프라이트&lt;div&gt;개수 유효성 검사&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1865" y="2090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-76" target="t-AsFtT7vG49kxP8RTwV-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1928" y="2250" />
+              <mxPoint x="1685" y="2250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-76" value="SPRITE.SECOND&lt;div&gt;가 TRUE라면 출력&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1867.5" y="2170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-77" target="t-AsFtT7vG49kxP8RTwV-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1685" y="2330" />
+              <mxPoint x="1220" y="2330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-77" value="SCENE&lt;div&gt;MANAGER&lt;/div&gt;&lt;div&gt;-&amp;gt;DRAW() 종료&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1625" y="2260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-AsFtT7vG49kxP8RTwV-80" target="t-AsFtT7vG49kxP8RTwV-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="2480" />
+              <mxPoint x="1080" y="30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-80" value="메시지 루프&lt;div&gt;종료&lt;/div&gt;&lt;div&gt;처음으로&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="2450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-AsFtT7vG49kxP8RTwV-82" value="UI INITIALIZER()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="-70" width="900" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
